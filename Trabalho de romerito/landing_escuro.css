@@ -1,0 +1,774 @@
+
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    width: 100%;
+    height: 10000px;
+    
+}
+@font-face {
+    font-family:"monl" ;
+    src: url(fontes/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: "monm";
+    src: url(fontes/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: "monsb";
+    src: url(fontes/Montserrat-Bold.ttf);
+}
+@font-face{
+    font-family: "xilosa";
+    src: url(fontes/xilosa_.ttf);
+}
+@font-face{
+    font-family: "mons";
+    src: url(fontes/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "mon";
+    src: url(fontes/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "merry";
+    src: url(fontes/Merriweather-Regular.ttf);
+}
+header  {
+    background-color: #3B3B3B;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+li{
+    text-align: center;
+    align-items: center;
+}
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    height: 80px;
+  
+
+}
+
+#icone{
+    font-size: 64px;
+    color: #f5f5f5;
+}
+#carrinho{
+    font-size: 40px;
+    color: #000000;
+    padding-right: 40px;
+    justify-content: center;
+    
+}
+#userclaro{
+ align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#userclaro:hover{
+ cursor: pointer;
+}
+.fa-regular fa-circle-user fa-2xl :hover{
+cursor: pointer;
+}
+.fa-regular fa-circle-user{
+width: 40px;
+height: 40px;
+}
+nav ul {
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-family: mons;
+}
+
+nav a {
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 32px;
+    transition: color 0.3s ease;
+    font-family: mons;
+}
+
+nav a:hover {
+    color: #46CE3B;
+    
+}
+
+.secao1 {
+    position: relative;
+}
+
+.featured-image {
+    width: 100%;
+}
+
+.chamada {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+    font-size: 80px;
+    background-color: transparent;
+}
+
+
+.saboreie{
+   
+    font-family: xilosa;
+    font-size: 80px;
+    color: #F3E3C4;
+    text-align: start;
+    
+}
+
+p {
+    font-size: 24px;
+}
+
+.btn {
+    margin-left: 5%;
+    background-color: none;
+    font-size: 40px;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 40px;
+    transition: border-color 0.4s ease;
+    border: solid 2px rgb(255, 255, 255);
+    font-family: mons;
+}
+
+.btn:hover {
+    border-color: #d89c4a;
+   
+}
+.logo:hover{
+cursor: pointer;
+}
+.img2{
+    height: 70px;
+    width: 6%;
+    justify-content: right;
+    align-items: center;
+}
+.img2:hover{
+    cursor: pointer;
+}
+
+/*parte2*/
+
+
+.container {
+    width: 100%;
+    background-color: #000000;
+   padding-bottom: 30px;
+}
+
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.history {
+    flex: 1;
+    background-color: #163A50;
+    padding: 20px;
+    border-radius: 8px;
+    height: 492px;
+    width: 503px;
+   margin-left: 45%;
+   margin-top: 5%;
+   
+}
+.nord1{
+    margin-left: 45%;
+    margin-top: 5%;
+    
+}
+.nord2{
+    height: 717px;
+    width: 600px;
+  
+}
+.detalhe1{
+    width: 543px;
+}
+
+.images {
+    flex: 1;
+margin-left: 5%;
+align-items: center;
+margin-bottom: 4%;
+position: relative;
+   align-content: center;
+
+}
+
+.images img {
+    position: relative;
+    margin-left: 20%;
+    border-radius: 8px;
+    max-width: 100%;
+}
+.nossa{
+    color: #F3E3C4;
+    font-size: 48px;
+    font-family: xilosa;
+}
+.cangari{
+    font-family: monsb;
+    color: #B4B4B4;
+    font-size: 24px;
+}
+.desc{
+    color: #f5f5f5;
+    font-family: mons;
+    font-size: 24px;
+}
+
+.conheça{
+    font-family: xilosa;
+    font-size: 48px;
+    color: #EFE7D8;
+  padding-top: 2%;
+  text-align: center;
+}
+.header3{
+    text-align: center;
+}
+.corpo{
+    display: flex;
+
+    align-items: flex-start;
+    padding: 20px;
+}
+
+
+/*parte3*/
+
+.info{
+    background-color: color-mix(in srgb, #163A50 100%, #000000 20%);
+    border-radius: 8px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.resta1 {
+  
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    text-align: center;
+    margin-left: 12%;
+}
+
+.resta1 img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.resta1 p{
+    
+    font-family: mon;
+    font-size: 24px;
+}
+.resta1 h2{
+    font-family: mon;
+    font-size: 32px;
+    color: #F3E3C4;
+}
+
+.info h2 {
+    margin: 10px 0;
+}
+
+.butao {
+    background-color: #46CE3B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+ margin-left: auto;
+ margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+   
+}
+
+.contact-form {
+    margin-top: 1%;
+    background-color: #3B3B3B;
+    padding: 20px;
+    height: 607px;
+    width: 20%;
+    margin-left: 15%;
+    padding-right: 2%;
+    border: solid 14px #EFE7D8;
+    border-top: transparent;
+    border-left: transparent;
+    
+   
+ 
+    
+    
+}
+
+.contact-form h3 {
+    color: #F3E3C4;
+    font-family: merry;
+    text-align: center;
+    font-size: 36px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.contact-form p{
+    color: #D89F46;
+    text-align: center;
+    font-size: 24px;
+    font-family: mon;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10%;
+    border: 3px solid;
+    border-color: color-mix(in srgb, #EFE7D8 100%, #000000 20%);
+    border-radius: 4px;
+    color: #b1b2b2;
+    background-color: #EFE7D8;
+
+}
+.input{
+    content: #ffffff;
+    
+}
+.contact-form button {
+    background-color: #000000;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: mons;
+   
+}
+.cadastrar{
+    text-align: center;
+    
+  
+}
+.cadastrar :hover{
+    color: #d89c4a;
+    background-color: #1a1a1a;
+    transition: 0.5s;
+}
+.corpo2{
+    background: linear-gradient(to bottom, #2c2c2c, #050B0F);
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 2400px;
+}
+.venha{
+   
+    font-family: xilosa;
+    font-size: 48px;
+    color: #F3E3C4;
+}
+.header2{
+    text-align: center;
+}
+
+.resta2 {
+  left: 10%;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    text-align: center;
+    margin-left: 12%;
+}
+
+.resta2 img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.resta2 p{
+    
+    font-family: mon;
+    font-size: 24px;
+}
+.resta2 h2{
+    font-family: mon;
+    font-size: 32px;
+    color: #F3E3C4;
+}
+.resta2 button{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.outro{
+    margin-left: 0.9%;
+}
+.butao{
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+button img{
+    width: 40px;
+    height: 30px;
+    align-items: center;
+}
+button span{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.cuscuis{
+    width: 100%;
+    height: 162px;
+    align-items: end;
+    justify-content: end;
+    padding: 0px;
+    margin: 0px;
+}
+.cuscuis img{
+width: 100%;
+height: 162px;
+}
+.section4{
+    background-color: #2E3133;
+    height: 2418px;
+   
+}
+.header4{
+    text-align: center;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.titulo4{
+    padding-bottom: 15px;
+    font-family: mons;
+    color: #d89c4a;
+    font-size: 24px;
+}
+.Cardapio2{
+    font-family: xilosa;
+    font-size: 64px;
+    color: #F3E3C4;
+}
+.itenscar{
+display: flex;
+margin-left: 10%;
+margin-top: 10%;
+width: 100%;
+}
+.item_esquerda{
+    display: flex;
+    flex-direction: column;
+   
+}
+.comida{
+    text-align: center;
+    margin-top: 12%;
+
+   
+}
+.comida img{
+    width: 80%;
+    height: 268px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.desc_comida{
+    background-color: #1A1A1A;
+    border-radius: 5px;
+    height: 256px;
+    margin-top: 5%;
+    padding-left: 5%;
+    width: 443px;
+}
+.nome_comida{
+    font-size: 32px;
+    color: #ffffff;
+    font-family: mon;
+}
+.preço{
+    font-size: 32px;
+    color: #D89F46;
+    font-family: merry;
+    
+}
+
+
+.carac_comida{
+    
+font-family: mon;
+font-size: 24px;
+color: #F3E3C4;
+}
+.item_direita{
+    
+     display: flex;
+    flex-direction: column;
+  margin-left: 20%;
+
+    
+}
+.comidas{
+    text-align: center;
+    margin-top: 12%;
+}
+.comidas img{
+    width: 380px;
+    height: 268px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.desc_comida2{
+    background-color: #1A1A1A;
+    border-radius: 5px;
+    height: 256px;
+    margin-top: 5%;
+    padding-left: 5%;
+    width: 443px;
+    
+}
+.cardapio_inteiro{
+    text-align: center;
+    text-decoration: none;
+    background-color: #000000;
+    padding: 10px 20px;
+    color: #ffffff;
+   border-radius: 40px;
+    font-size: 32px;
+    font-family: monsb;
+    
+    
+}
+.cardapio_inteiro a{
+    margin-top: 10%;
+    text-decoration: none;
+    color: #9D4821;
+}
+.arroba{
+    width:fit-content;
+    height: 50px;
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+   
+}
+.cardapio_inteiro:hover{
+    cursor: pointer;
+    color: #D89F46;
+    background-color: #1A1A1A;
+    transition: 0.8s;
+}
+.ci{
+    margin-top: 5%;
+   text-align: center;
+}
+.secao5{
+    height: 1800px;
+    width: 100%;
+    background-color: #163A50;
+ 
+   
+}
+.secao6{
+    background-color: #2D2D2D;
+    width: 100%;
+    padding-top: 20px;
+
+    
+    height: 2450px;
+}
+.services{
+    font-family: monsb;
+    font-size: 24px;
+    color: #d89c4a;
+   
+}
+.canga{
+    font-size: 64px;
+    font-family: xilosa;
+    color: #F3E3C4;
+}
+.secao7{
+    background-color: #1a1a1a;
+    width: 95%;
+    height: 2400px;
+    margin-left: auto;
+    margin-right: auto;
+   margin-top: 0.7%;
+   
+}
+.cangaforall{
+    margin-left: 3%;
+    padding-top: 40px;
+  
+}
+
+.servicos{
+margin-left: 15%;
+display: flex;
+
+}
+
+.sobre_os_serviços{
+    background-color: #3B3B3B;
+    border-radius: 5px;
+    width: 544px;
+    height: 425px;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 2%;
+}
+.nome_serviço{
+    font-size: 48px;
+    font-family: xilosa;
+    color: #F3E3C4;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+.desc_serviço{
+    font-size: 24px;
+    font-family: mon;
+    color: #EFE7D8;
+    padding-left: 10%;
+    padding-top: 5%;
+   
+    height: 120px;
+}
+.chamada_serviço{
+    font-size: 28px;
+    color: #ffffff;
+    font-family: monm;
+    text-decoration: none;
+    background-color: #000000;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+}
+.imagens_services{
+    margin-top: 10%;
+}
+.imagens_services img{
+width: 460px;
+height: 425px;
+}
+.imagens_services:hover{
+    cursor: pointer;
+}
+.sobre_os_serviços2{
+     background-color: #3B3B3B;
+    border-radius: 5px;
+    width: 544px;
+    height: 425px;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 2%;
+}
+.imagens_services2{
+    margin-top: 4%;
+    
+}
+.imagens_services2 img{
+width: 460px;
+height: 425px;
+}
+
+.imagens_services2  :hover{
+    cursor: pointer;
+}
+.chamada_serviço2{
+     font-size: 28px;
+    color: #ffffff;
+    font-family: monm;
+    text-decoration: none;
+    background-color: #000000;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+}
+.chamada_serviço2:hover{
+    background-color: #1A1A1A;
+    color: #d89c4a;
+    transition: 0.8s;
+}
+.chamada_serviço:hover{
+    background-color: #1a1a1a;
+    color: #d89c4a;
+    transition: 0.8s; 
+}
+.rodape{
+    background-color: #3b3b3b;
+    width: 100%;
+    height: 476px;
+}
+#direitos{
+    font-size: 20px;
+    font-family: monl;
+    color: #ffffff;
+}
+#dono{
+   font-size: 20px;
+    font-family: monl;
+    color: #46CE3B;  
+}
+.di{
+    padding-top: 4%;
+    text-align: center;
+   
+}
+#local{
+     font-size: 14px;
+    font-family: mon;
+    color: #ffffff;
+}
