@@ -1,0 +1,221 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3e3c4;
+    
+}
+#logo{
+
+margin-right: 14px;
+margin-bottom: 18px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1070px;
+    height: 670px;
+    
+}
+.area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 5px gray;
+    flex-direction: row-reverse;
+}
+#cadastro-bloco{
+    position: absolute;
+    
+}
+#cangarito{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.logar{
+    display: flex;
+    flex-direction: column;
+    width: 617px;
+    height: 669px;
+
+    background-color: #F5F5F5;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-bottom: gray solid 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+#titulo h1{
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+#informacoes{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+   padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 3px;
+    
+}
+#informacoes input{
+    display: flex;
+    width: 546px;
+    height: 48px;
+    padding-top: 5px;
+    border-radius: 16px;
+    background-color: #EEEEEE;
+    border: 0px;
+    
+}
+
+#informacoes p{
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+#email::placeholder{
+    display: flex;
+    font-size: 26px;
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 8px;
+    justify-content: center;
+}
+#texto::placeholder{
+    display: flex;
+    font-size: 26px;
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 8px;
+    justify-content: center;
+}
+#senha::placeholder{
+    display: flex;
+    font-size: 26px;
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 8px;
+    justify-content: center;
+}
+#senha,#email,#texto{
+    display: flex;
+    font-size: 26px;
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 8px;
+    justify-content: center;
+}
+
+button{
+    display: flex;
+    width: 546px;
+    height: 48px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #9D4821;
+    color: white;
+    border-radius: 16px;
+    transition: 0.4s;
+    border: 0px;
+}
+button h2{
+    font-size: 28px;
+    font-weight: medium;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+button:hover{
+    background-color: #bb8b3e;
+    transition: 0.4s;
+    scale: 1.05;
+}
+#acessar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight:lighter;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 15px;
+}
+.acessos{
+    display: flex;
+    width: 50%;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.acessos a{
+    opacity: 40%;
+    transition: 0.4s;
+}
+a:hover{
+    transition: 0.4s;
+    opacity: 100%;
+}
+.circulo{
+display: flex;
+width: 50px;
+height: 50px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 3% ;
+flex-direction: row;
+border: black solid 3px;
+border-radius: 50%;
+margin-top: auto;
+margin-bottom: auto;
+}
+.circulo svg{
+display: flex;
+width: 40px;
+height: 40px;
+margin-top: auto;
+margin-bottom: auto;
+margin-left: auto;
+margin-right: auto;
+}
