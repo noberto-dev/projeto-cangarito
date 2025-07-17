@@ -8,35 +8,17 @@ body {
     height: 10000px;
     
 }
-@font-face {
-    font-family:"monl" ;
-    src: url(fontes/Montserrat-Light.ttf);
+.montserrat{
+  font-family: "Montserrat", sans-serif;
 }
-@font-face {
-    font-family: "monm";
-    src: url(fontes/Montserrat-Medium.ttf);
+.merriweather{
+  font-family: "Merriweather", serif;
+
 }
-@font-face {
-    font-family: "monsb";
-    src: url(fontes/Montserrat-Bold.ttf);
-}
-@font-face{
-    font-family: "xilosa";
-    src: url(fontes/xilosa_.ttf);
-}
-@font-face{
-    font-family: "mons";
-    src: url(fontes/Montserrat-SemiBold.ttf);
+.xilosa{
+    font-family: 'Xilosa', sans-serif;
 }
 
-@font-face {
-    font-family: "mon";
-    src: url(fontes/Montserrat-Regular.ttf);
-}
-@font-face {
-    font-family: "merry";
-    src: url(fontes/Merriweather-Regular.ttf);
-}
 header  {
     background-color: #3B3B3B;
     padding: 10px;
@@ -96,7 +78,9 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    font-family: mons;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+   
 }
 
 nav a {
@@ -107,7 +91,8 @@ nav a {
     font-weight: bold;
     font-size: 32px;
     transition: color 0.3s ease;
-    font-family: mons;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
 
 nav a:hover {
@@ -135,7 +120,7 @@ nav a:hover {
 
 .saboreie{
    
-    font-family: xilosa;
+    font-family: 'Xilosa', sans-serif;
     font-size: 80px;
     color: #F3E3C4;
     text-align: start;
@@ -157,7 +142,8 @@ p {
     border-radius: 40px;
     transition: border-color 0.4s ease;
     border: solid 2px rgb(255, 255, 255);
-    font-family: mons;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
 
 .btn:hover {
@@ -238,10 +224,11 @@ position: relative;
 .nossa{
     color: #F3E3C4;
     font-size: 48px;
-    font-family: xilosa;
+   font-family: 'Xilosa', sans-serif;
 }
 .cangari{
-    font-family: monsb;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     color: #B4B4B4;
     font-size: 24px;
 }
@@ -252,7 +239,7 @@ position: relative;
 }
 
 .conheça{
-    font-family: xilosa;
+    font-family: 'Xilosa', sans-serif;
     font-size: 48px;
     color: #EFE7D8;
   padding-top: 2%;
@@ -291,14 +278,15 @@ position: relative;
     border-radius: 8px;
 }
 .resta1 p{
-    
-    font-family: mon;
+    font-weight: 400;
+     font-family: "Montserrat", sans-serif;
     font-size: 24px;
 }
 .resta1 h2{
-    font-family: mon;
+    font-family: "Montserrat", sans-serif;
     font-size: 32px;
     color: #F3E3C4;
+    font-weight: 400;
 }
 
 .info h2 {
@@ -340,7 +328,8 @@ position: relative;
 
 .contact-form h3 {
     color: #F3E3C4;
-    font-family: merry;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
     text-align: center;
     font-size: 36px;
 }
@@ -353,7 +342,8 @@ position: relative;
     color: #D89F46;
     text-align: center;
     font-size: 24px;
-    font-family: mon;
+     font-family: "Montserrat", sans-serif;
+     font-weight: 400;
 }
 
 .contact-form input {
@@ -379,7 +369,8 @@ position: relative;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 24px;
-    font-family: mons;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
    
 }
 .cadastrar{
@@ -401,7 +392,7 @@ position: relative;
 }
 .venha{
    
-    font-family: xilosa;
+    font-family: 'Xilosa', sans-serif;
     font-size: 48px;
     color: #F3E3C4;
 }
@@ -424,11 +415,13 @@ position: relative;
 }
 .resta2 p{
     
-    font-family: mon;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
     font-size: 24px;
 }
 .resta2 h2{
-    font-family: mon;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
     font-size: 32px;
     color: #F3E3C4;
 }
@@ -484,12 +477,13 @@ height: 162px;
 }
 .titulo4{
     padding-bottom: 15px;
-    font-family: mons;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     color: #d89c4a;
     font-size: 24px;
 }
 .Cardapio2{
-    font-family: xilosa;
+    font-family: 'Xilosa', sans-serif;
     font-size: 64px;
     color: #F3E3C4;
 }
@@ -528,19 +522,22 @@ width: 100%;
 .nome_comida{
     font-size: 32px;
     color: #ffffff;
-    font-family: mon;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
 }
 .preço{
     font-size: 32px;
     color: #D89F46;
-    font-family: merry;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
     
 }
 
 
 .carac_comida{
     
-font-family: mon;
+font-family: "Montserrat", sans-serif;
+    font-weight: 400;
 font-size: 24px;
 color: #F3E3C4;
 }
@@ -579,7 +576,8 @@ color: #F3E3C4;
     color: #ffffff;
    border-radius: 40px;
     font-size: 32px;
-    font-family: monsb;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     
     
 }
@@ -622,14 +620,15 @@ color: #F3E3C4;
     height: 2450px;
 }
 .services{
-    font-family: monsb;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     font-size: 24px;
     color: #d89c4a;
    
 }
 .canga{
     font-size: 64px;
-    font-family: xilosa;
+    font-family: 'Xilosa', sans-serif;
     color: #F3E3C4;
 }
 .secao7{
@@ -665,14 +664,15 @@ display: flex;
 }
 .nome_serviço{
     font-size: 48px;
-    font-family: xilosa;
+    font-family: 'Xilosa', sans-serif;
     color: #F3E3C4;
     padding-left: 10%;
     padding-top: 2%;
 }
 .desc_serviço{
     font-size: 24px;
-    font-family: mon;
+     font-family: "Montserrat", sans-serif;
+    font-weight: 400;
     color: #EFE7D8;
     padding-left: 10%;
     padding-top: 5%;
@@ -682,7 +682,8 @@ display: flex;
 .chamada_serviço{
     font-size: 28px;
     color: #ffffff;
-    font-family: monm;
+     font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     text-decoration: none;
     background-color: #000000;
     width: fit-content;
@@ -727,7 +728,8 @@ height: 425px;
 .chamada_serviço2{
      font-size: 28px;
     color: #ffffff;
-    font-family: monm;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     text-decoration: none;
     background-color: #000000;
     width: fit-content;
@@ -754,12 +756,14 @@ height: 425px;
 }
 #direitos{
     font-size: 20px;
-    font-family: monl;
+     font-family: "Montserrat", sans-serif;
+    font-weight: 300;
     color: #ffffff;
 }
 #dono{
    font-size: 20px;
-    font-family: monl;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
     color: #46CE3B;  
 }
 .di{
@@ -769,6 +773,7 @@ height: 425px;
 }
 #local{
      font-size: 14px;
-    font-family: mon;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
     color: #ffffff;
 }
