@@ -1,29 +1,27 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 body{
-    background-color: #f3e3c4;
+    background-color: #1A1A1A;
     
 }
 #logo{
 
 margin-right: 14px;
 margin-bottom: 18px;
+width: 70px;
+height: 84px;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1070px;
-    height: 670px;
-    
-}
+
 .area{
     display: flex;
     justify-content: center;
@@ -31,10 +29,7 @@ margin-bottom: 18px;
     box-shadow: 0 5px 5px gray;
     flex-direction: row-reverse;
 }
-#cadastro-bloco{
-    position: absolute;
-    
-}
+
 #cangarito{
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
@@ -45,7 +40,7 @@ margin-bottom: 18px;
     width: 617px;
     height: 669px;
 
-    background-color: #F5F5F5;
+    background-color: #313131;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
@@ -54,23 +49,16 @@ margin-bottom: 18px;
     justify-content: center;
     align-items: center;
     width: 90%;
-    border-bottom: gray solid 3px;
+    border-bottom: #D89F46 solid 3px;
     margin-left: auto;
     margin-right: auto;
     padding: 3%;
 }
-.montserrat {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
 #titulo h1{
+    color: #D89F46;
     font-size: 48px;
     font-weight: 600;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #informacoes{
     display: flex;
@@ -101,6 +89,7 @@ margin-bottom: 18px;
     font-size:20px;
     font-weight: bold;
     margin-top: 2px;
+    color: white;
 }
 #email::placeholder{
     display: flex;
@@ -218,4 +207,34 @@ margin-top: auto;
 margin-bottom: auto;
 margin-left: auto;
 margin-right: auto;
+}
+.block-cangarito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.box-cadastro{
+    width: 36vh;
+    height: 50%;
+    position: absolute;
+    background: transparent;
+    backdrop-filter: blur(7px);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4%;
+    box-shadow: 2px 2px 10px 0px rgb(24, 24, 24) ;
+    color: #E8E8E8;
+}
+.box-cadastro button{
+    width:80%;
+    border-radius: 50px; /*Tive que fazer uma alteração no botão, pra deixar ele menor e mais adequado a div*/
+    height: 16%;
+    font-size: 16;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: medium;
+    font-style: normal;
 }
