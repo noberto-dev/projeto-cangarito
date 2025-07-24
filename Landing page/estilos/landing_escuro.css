@@ -777,3 +777,728 @@ height: 425px;
     font-weight: 400;
     color: #ffffff;
 }
+@media (width: 390px) {
+  body {
+    width: 780px;
+    height: auto;
+    overflow-x: hidden;
+  }
+  .logo{
+    height: 40px;
+  }
+  header {
+    flex-direction: flex;
+    padding: 15px 10px;
+    align-items: center;
+    width: 844px;   
+  }
+  nav ul {
+    flex-direction: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  nav a {
+    font-size: 20px;
+  }
+  .secao1 img{
+    width: 865px;
+  }
+  .chamada {
+    font-size: 48px;
+    top: 18%;
+    left: 10%;
+    text-align: center;
+    width: 100%;
+  }
+  .saboreie {
+    font-size: 48px;
+    text-align: center;
+    margin: 10px 15px;
+  }
+  p {
+    font-size: 20px;
+    margin: 0 15px;
+  }
+  .btn {
+    font-size: 26px;
+    padding: 12px 20px;
+    margin-left: 0;
+    align-self: center;
+  }
+  .history,  .detalhe1 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-top: 15px;
+  }
+  .container{
+    width: 700px;
+    margin-left: 15%;
+    
+    
+  }
+  .content {
+    display: flex;
+    flex-direction: flex;
+    padding: 15px 10px;
+    align-items: center;
+    
+  }
+  .nord1{
+       width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-top: 15px;
+    text-align: center;
+
+  }
+  .article1{
+    display: flex;
+    flex-direction: column;
+  }
+  .images{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+  }
+  .images img {
+    margin-bottom: 25px;
+  }
+.nord2{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+}
+  .images img {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .nossa, .conheça, .canga {
+    font-size: 48px;
+    text-align: center;
+    margin: 10px 0;
+  }
+.header2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.venha{
+     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8%;
+}
+  .contact-form {
+    width: 450px;
+    
+    margin-top: 10%;
+    height: 540px;
+    padding: 15px;
+    border-width: 10px ;
+  }
+  .corpo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+.contact-form input{
+    margin-top: 2%;
+    width: 280px;
+}
+  .corpo2{
+    width: 865px;
+    height: 2600px;
+  }
+  .resta1 {
+    width: 830px;
+    height: fit-content;
+    padding: 15px;
+  }
+  .outro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .resta2 {
+    width: 830px;
+    
+    height: fit-content;
+    padding: 15px;
+  }
+  .item_direita {
+    margin-left: 0;
+    
+  }
+  .comida img, .comidas img {
+    width: 100%;
+    height: auto;
+    margin-left: 11%;
+  }
+  .desc_comida, .desc_comida2 {
+    width: 100%;
+    padding-left: 15px;
+    height: auto;
+    padding-bottom: 30px;
+ margin-left: 10%;
+    
+  }
+  .itenscar {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .section4{
+    height: 5400px;
+    margin-top: auto;
+    width: 865px;
+}
+  .cardapio_inteiro {
+    font-size: 26px;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .secao6{
+    height: 2200px;
+    width: 865px;
+  }
+  .secao7 {
+    height: 2400px;
+    margin-top: auto;
+    width: 865px;
+    
+  }
+.item_esquerda{
+    width: 720px;
+}
+.item_direita{
+    width: 720px;
+    
+}
+  .secao5{
+    padding-top: 10%;
+    width: 865px;
+  }
+.servicos{
+    margin-left: 1%;
+    margin-top: 4%;
+}
+.sobre_os_serviços{
+    height: 420px;
+    margin-left: 0px;
+}
+.desc_serviço{
+    font-size: 18px;
+}
+.sobre_os_serviços{
+    height: 425px ;
+}
+.sobre_os_serviços2{
+    height: 425px;
+    
+   
+    
+}
+
+.chamada_serviço{
+    width: fit-content;
+    font-size: 24px;
+}
+.chamada_serviço2{
+width: fit-content;
+    font-size: 24px;
+}
+  .rodape {
+    height: auto;
+    padding: 25px 15px;
+    width: 832px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (width: 430px) {
+  body {
+    width: 830px;
+    height: 13080px;
+    overflow-x: hidden;
+  }
+  .logo{
+    height: 60px;
+  }
+  header {
+    flex-direction: flex;
+    padding: 15px 10px;
+    align-items: center;
+    width: 955px;   
+  }
+  nav ul {
+    flex-direction: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  nav a {
+    font-size: 24px;
+  }
+  .secao1 img{
+    width: 975px;
+  }
+  .chamada {
+    font-size: 48px;
+    top: 18%;
+    left: 10%;
+    text-align: center;
+    width: 100%;
+  }
+  .saboreie {
+    font-size: 48px;
+    text-align: center;
+    margin: 10px 15px;
+  }
+  p {
+    font-size: 20px;
+    margin: 0 15px;
+  }
+  .btn {
+    font-size: 26px;
+    padding: 12px 20px;
+    margin-left: 0;
+    align-self: center;
+  }
+  .history,  .detalhe1 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-top: 15px;
+  }
+  .container{
+    width: 700px;
+    margin-left: 22%;
+    
+    
+  }
+  .content {
+    display: flex;
+    flex-direction: flex;
+    padding: 15px 10px;
+    align-items: center;
+    
+  }
+  .nord1{
+       width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-top: 15px;
+    text-align: center;
+
+  }
+  .article1{
+    display: flex;
+    flex-direction: column;
+  }
+  .images{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+  }
+  .images img {
+    margin-bottom: 25px;
+  }
+.nord2{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+}
+  .images img {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .nossa, .conheça, .canga {
+    font-size: 48px;
+    text-align: center;
+    margin: 10px 0;
+  }
+.header2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.venha{
+     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12%;
+}
+  .contact-form {
+    width: 450px;
+    
+    margin-top: 10%;
+    height: 540px;
+    padding: 15px;
+    border-width: 10px ;
+    margin-left: 13.0%;
+  }
+  .corpo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+.contact-form input{
+    margin-top: 2%;
+    width: 280px;
+}
+  .corpo2{
+    width: 975px;
+    height: 2600px;
+  }
+  .resta1 {
+    width: 830px;
+    height: fit-content;
+    padding: 15px;
+  }
+  .outro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .resta2 {
+    width: 830px;
+    
+    height: fit-content;
+    padding: 15px;
+  }
+  .item_direita {
+    margin-left: 0;
+    
+  }
+  .comida img, .comidas img {
+    width: 100%;
+    height: auto;
+    margin-left: 17.5%;
+  }
+  .desc_comida, .desc_comida2 {
+    width: 100%;
+    padding-left: 15px;
+    height: auto;
+    padding-bottom: 30px;
+ margin-left: 16%;
+    
+  }
+  .itenscar {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .section4{
+    height: 5400px;
+    margin-top: auto;
+    width: 975px;
+}
+  .cardapio_inteiro {
+    font-size: 26px;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .secao6{
+    height: 2200px;
+    width: 905  px;
+  }
+  .secao7 {
+    height: 2400px;
+    margin-top: auto;
+    width: 975px;
+    
+  }
+.item_esquerda{
+    width: 720px;
+}
+.item_direita{
+    width: 720px;
+    
+}
+  .secao5{
+    padding-top: 10%;
+    width: 975px;
+  }
+.servicos{
+    margin-left: 1%;
+    margin-top: 4%;
+}
+.sobre_os_serviços{
+    height: 420px;
+    margin-left: 0px;
+}
+.desc_serviço{
+    font-size: 18px;
+}
+.sobre_os_serviços{
+    height: 425px ;
+}
+.sobre_os_serviços2{
+    height: 425px;
+    
+   
+    
+}
+
+.chamada_serviço{
+    width: fit-content;
+    font-size: 24px;
+}
+.chamada_serviço2{
+width: fit-content;
+    font-size: 24px;
+}
+  .rodape {
+    height: 320px;
+    margin-top: 5%;
+    padding: 25px 15px;
+    width: 945px;
+  }
+}
+
+
+
+
+
+
+
+
+@media (width: 820px) {
+    
+    body {
+        height: auto;
+         
+    }
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+    }
+    
+    .logo {
+        height: 90px;
+    }
+    
+    nav ul {
+        gap: 25px;
+    }
+    
+    nav a {
+        font-size: 28px;
+    }
+    
+    .secao1 {
+        margin-bottom: 40px;
+        width: 997px;
+    }
+    
+    .chamada, .saboreie {
+        font-size: 56px;
+        left: 8%;
+        top: 20%;
+    }
+    
+    .btn {
+        font-size: 28px;
+        padding: 15px 30px;
+    }
+    
+    .content{
+      display: flex;
+      
+      width: 957px;
+    }
+    
+    .history {
+        width:350px;
+        margin-left: 15%;
+        height: fit-content;
+        
+        
+    }
+    .article1{
+      width: 400px;
+      
+    }
+   .detalhe1{
+    width: 350px;
+    background-color: #9D4821;
+   }
+   .nord1{
+    width: 200px;
+    padding: 0%;
+    margin: 0%;
+    margin-left: 18%;
+    margin-top: 5%;
+   }
+   .images img{
+    width: 420px;
+    margin-left: 10%;
+   }
+    .corpo2{
+      width: 820px;
+      padding-right: 177px;
+     height: 2050px;
+    }
+    .corpo{
+      width: 800px;
+    }
+    .outro{
+      width: 800px;
+    }
+    .resta1{
+      width: 300px;
+    }
+    .resta2{
+      width: 300px;
+      margin-left: 13%;
+    }
+    .contact-form {
+        width: 300px;
+        margin-left: 2%;
+        height: 650px;
+    }
+    .contact-form input{
+      width: 220px;
+    }
+    .cuscuis{
+      width: 997px;
+    }
+   
+    
+    .section4{
+      width: 900px;
+      height: 2300px;
+      padding-right: 97.3px;
+    }
+    .item_esquerda, .item_direita {
+        width: 350px;
+        margin-left: 5%;
+    }
+    
+    .comida img, .comidas img {
+        height: 200px;
+        width: 320px;
+        margin-left: 1%;
+    }
+    
+    .desc_comida, .desc_comida2 {
+        height: 320px;
+        width: 90%;
+        margin-left: 2%;
+    }
+    .ci{
+      margin-top: 100px;
+      margin-left: 10%;
+      text-align: center;
+    }
+    
+    .secao5{
+width: 957px;
+height: 2600px;
+
+    }
+    .secao6{
+     margin: 0px;
+     padding: 0px;
+     width: fit-content;
+      height: 2500px;
+      
+    }
+   
+    .servicos {
+        margin-left: 3%;
+    }
+    
+    .sobre_os_serviços, .sobre_os_serviços2 {
+        width: 40%;
+    }
+    
+    
+    #icone, #carrinho {
+        font-size: 42px;
+    }
+    
+    #menu {
+        padding: 0 30px;
+    }
+    
+    #userclaro {
+        padding-right: 30px;
+    }
+    
+    
+    .secao5, .secao6, .secao7 {
+        padding: 40px 20px;
+    }
+    
+    .Cardapio2, .canga,
+    .conheça, .venha {
+        font-size: 56px;
+    }
+    
+    .services {
+        font-size: 28px;
+    }
+    .desc_serviço{
+      font-size: 18px;
+    }
+    .chamada_serviço{
+      font-size: 22px;
+    }
+    .chamada_serviço2{
+      font-size: 22px;
+    }
+    .rodape {
+      display: flex;
+      flex-direction: column;
+       width: 950px;
+       
+      margin-top: 7%;
+      
+      
+       
+    }
+    
+    #direitos, #dono {
+        font-size: 22px;
+    }
+    
+    #local {
+        font-size: 18px;
+    }
+}
