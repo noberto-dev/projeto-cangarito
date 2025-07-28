@@ -780,11 +780,7 @@ height: 425px;
     overflow-x: hidden;
   }
   .logo{
-<<<<<<< Updated upstream
-    height: 40px;
-=======
     height: 60px;
->>>>>>> Stashed changes
   }
   header {
     flex-direction: flex;
