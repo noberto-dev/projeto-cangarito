@@ -522,12 +522,12 @@ height: 162px;
 display: flex;
 margin-left: 10%;
 margin-top: 10%;
-width: 100%;
+width: fit-content;
 }
 .item_esquerda{
     display: flex;
     flex-direction: column;
-   
+   margin-left: 10%;
 }
 .comida{
     text-align: center;
@@ -576,7 +576,7 @@ color: #EFE7D8;
     
      display: flex;
     flex-direction: column;
-  margin-left: 20%;
+  margin-left: 40%;
 
     
 }
@@ -823,7 +823,11 @@ height: 425px;
     padding: 15px 10px;
     align-items: center;
     width: 844px;
-    position: static;   
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    position: static;
   }
   nav ul {
     flex-direction: flex;
@@ -969,8 +973,11 @@ height: 425px;
     height: fit-content;
     padding: 15px;
   }
+  .item_esquerda{
+    margin-left: 0px;
+  }
   .item_direita {
-    margin-left: 0;
+    margin-left: 0px;
     
   }
   .comida img, .comidas img {
@@ -989,6 +996,7 @@ height: 425px;
   .itenscar {
     flex-direction: column;
     margin-left: 0;
+    width: 100%;
   }
   .section4{
     height: 5400px;
@@ -1087,7 +1095,12 @@ width: fit-content;
     padding: 15px 10px;
     align-items: center;
     width: 955px;
-    position: static;      
+    padding: 10px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    position: static;   
   }
   nav ul {
     flex-direction: flex;
@@ -1235,7 +1248,7 @@ width: fit-content;
     padding: 15px;
   }
   .item_direita {
-    margin-left: 0;
+    margin-left: 0px;
     
   }
   .comida img, .comidas img {
@@ -1254,6 +1267,7 @@ width: fit-content;
   .itenscar {
     flex-direction: column;
     margin-left: 0;
+    width: 100%;
   }
   .section4{
     height: 5400px;
@@ -1277,6 +1291,7 @@ width: fit-content;
   }
 .item_esquerda{
     width: 720px;
+    margin-left: 0px;
 }
 .item_direita{
     width: 720px;
@@ -1341,7 +1356,10 @@ width: fit-content;
         display: flex;
         flex-direction: row;
         width: fit-content;
-        position: static;   
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        position: static;
     }
     
     .logo {
