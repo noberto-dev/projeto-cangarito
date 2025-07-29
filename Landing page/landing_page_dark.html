@@ -18,6 +18,7 @@
     <title>Cangarito - Comidas Nordestinas</title>
     <script src="https://kit.fontawesome.com/0dcb96df0e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilos/landing_escuro.css">
+    
 </head>
 <body>
     <header>
@@ -25,10 +26,10 @@
         <nav>
             <ul id="menu">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Cardápio</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Unidades</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="">Cardápio</a></li>
+                <li><a href="#footer" class="slow-scroll-link">Contato</a></li>
+                <li><a href="#unidades">Unidades</a></li>
+                <li><a href="#historia">Sobre</a></li>
             </ul>
         </nav>
        <div id="userclaro">
@@ -41,7 +42,8 @@
     </header>
 
     <main>
-        <section class="secao1">
+        
+        <section  class="secao1 slide-in-element">
             <img src="imagens/img inicial.png" alt="Delicious Food" class="featured-image">
             <div class="chamada">
                 <h1 class="saboreie">Saboreie <br>
@@ -52,9 +54,9 @@
                 <a href="#" class="btn">Cardápio ></a>
             </div>
         </section>
-        <div class="container">
+        <div class="container slide-in-element">
       
-        <section class="content">
+        <section id="historia" class="content">
             <article class="article1">
      <div class="history">
                 <h3 class="cangari">O Cangarito</h3>
@@ -81,7 +83,7 @@
 
 
 
-<section class="corpo2">
+<section id="unidades" class="corpo2 slide-in-element">
     <div class="header2">
 <span class="venha"> Conheça nossas unidades</span>
     </div>
@@ -101,7 +103,8 @@
                 <button class="butao"> <img src="imagens/watzap.png" alt=""> Entre em contato</button>
             </div>
         </section>
-        <aside class="contact-form">
+        
+        <aside class="contact-form slide-in-element ">
             <h3>Entre em contato</h3>
             <p>Realize o cadastro para concorrer a sorteios no Cangarito!</p>
             <form>
@@ -121,7 +124,7 @@
         </aside>
 
     </section>
-<section class="outro">
+<section class="outro slide-in-element">
         <section class="resta2">
             <img src="imagens/canga2.png" alt="Cangarito2">
             <div class="info">
@@ -140,11 +143,11 @@
     </section>
 </section>
 
-<article class="cuscuis">
+<article class="cuscuis slide-in-element">
 <img  src="imagens/cuscus_dark.png" alt="">
 </article>
 
-<section class="section4">
+<section class="section4 slide-in-element">
     
 <div class="header4">
 <span class="titulo4">CARDAPIO</span>
@@ -287,7 +290,7 @@ que só o sertão lhe permite ter
 
 </section>
 
- <section class="secao5">
+ <section class="secao5 slide-in-element">
 
 
 <section class="secao6">
@@ -403,7 +406,7 @@ a comida e a gelada. Fique atento
 
 </section>
 
-<footer class="rodape">
+<footer id="footer" class="rodape slide-in-element">
 <section class="di">
 <span id="direitos">Copyright © 2025 Restaurante Cangarito <br>
 | Desevolvido por <span id="dono">Informática 2V</span> |</span>
@@ -424,9 +427,43 @@ João Florêncio, 401, Bairro Paraíba, Caicó - Rio Grande do Norte CEP: 59300-
 
     </main>
 
-
-
-
- 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slideInElements = document.querySelectorAll('.slide-in-element');
+            const checkVisibility = () => {
+                slideInElements.forEach((element, index) => {
+                    
+                    const rect = element.getBoundingClientRect();
+                  
+                    const isVisible = (
+                        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.bottom >= 0
+                    );
+                    if (isVisible) {
+                        setTimeout(() => {
+                            element.classList.add('visible');
+                        }, index * 150); 
+                    } else {
+                        
+                    }
+                });
+            };
+           
+            checkVisibility();
+            
+            window.addEventListener('scroll', checkVisibility);
+           
+            document.querySelector('.slow-scroll-link').addEventListener('click', function(e) {
+                e.preventDefault();
+                document.documentElement.classList.add('slow-scroll');
+                setTimeout(() => {
+                    window.location.hash = this.getAttribute('href');
+                    setTimeout(() => {
+                        document.documentElement.classList.remove('slow-scroll');
+                    }, 1500);
+                }, 100);
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,4 +1,11 @@
-
+html {
+            scroll-behavior: smooth;
+            scroll-snap-type: y proximity;
+        }
+html.slow-scroll {
+            scroll-behavior: smooth;
+            scroll-snap-type: none;
+        }    
 body {
 
     margin: 0;
@@ -19,12 +26,38 @@ body {
     font-family: 'Xilosa', sans-serif;
 }
 
+.slide-in-element {
+            opacity: 0; 
+            transform: translateX(-100%); 
+            transition: opacity 1s ease-out, transform 1s ease-out; 
+        }
+
+        .slide-in-element.visible {
+            opacity: 1; 
+            transform: translateX(0); 
+        }
+
+        
+        .contact-form.slide-in-element { 
+            opacity: 0;
+            transform: translateX(100%); 
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .contact-form.slide-in-element.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
 header  {
     background-color: #3B3B3B;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+   
 }
 header nav{
     justify-content: center;
@@ -790,7 +823,13 @@ height: 425px;
     flex-direction: flex;
     padding: 15px 10px;
     align-items: center;
-    width: 844px;   
+    width: 844px;
+    background-color: #3B3B3B;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    position: static;
   }
   nav ul {
     flex-direction: flex;
@@ -1053,7 +1092,14 @@ width: fit-content;
     flex-direction: flex;
     padding: 15px 10px;
     align-items: center;
-    width: 955px;   
+    width: 955px;
+    background-color: #3B3B3B;
+    padding: 10px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    position: static;   
   }
   nav ul {
     flex-direction: flex;
@@ -1307,6 +1353,11 @@ width: fit-content;
         display: flex;
         flex-direction: row;
         width: fit-content;
+        background-color: #3B3B3B;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        position: static;
     }
     
     .logo {
