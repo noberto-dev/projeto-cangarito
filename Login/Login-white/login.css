@@ -35,7 +35,10 @@
   font-style: normal; 
 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 .montserrat-label-forms {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -43,6 +46,9 @@
   font-size: 20px;
   font-style: normal; 
 }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 
@@ -111,14 +117,20 @@ body{
     margin-right: auto;
     flex-direction: column;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
 =======
+=======
+>>>>>>> Stashed changes
     padding-top: 40px;
     padding-left: 10px;
     padding-right: 10px;
    
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
 #informacoes input{
@@ -137,11 +149,15 @@ body{
     margin-top: 5%;
 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #informacoes{
     display: flex;
     margin-top: 5%;
     color: black;
 }
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes
@@ -277,6 +293,12 @@ a:hover{
     height: 54px;
 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+#link-pags{
+    text-decoration: none;
+}
+>>>>>>> Stashed changes
 =======
 #link-pags{
     text-decoration: none;
