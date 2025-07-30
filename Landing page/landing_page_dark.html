@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -27,7 +28,7 @@
             <ul id="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#cardapio">Cardápio</a></li>
-                <li><a href="#footer" >Contato</a></li>
+                <li><a href="#footer">Contato</a></li>
                 <li><a href="#unidades">Unidades</a></li>
                 <li><a href="#historia">Sobre</a></li>
             </ul>
@@ -107,15 +108,18 @@
         <aside class="contact-form slide-in-element ">
             <h3>Entre em contato</h3>
             <p>Realize o cadastro para concorrer a sorteios no Cangarito!</p>
-            <form>
+            <form id="contactForm">
               
-                <input class="input"  type="text" id="nome" name="nome" placeholder="Nome">
-                
+                <input class="input"  type="text" id="nome" name="nome" placeholder="Nome" required>
               
-                <input class="input"  type="email" id="email" name="email" placeholder="Email">
+              
+                <input class="input"  type="email" id="email" name="email" placeholder="Email" >
+                <div class="erro_mensagem" id="email-error"></div>
+              
                 
+                <input class="input" type="tel" id="telefone" name="telefone" placeholder="Telefone" >
+                <div class="erro_mensagem" id="telefone-error"></div>
                 
-                <input class="input" type="tel" id="telefone" name="telefone" placeholder="Telefone">
                 <div class="cadastrar">
 <button  type="submit">Cadastre-se</button>
                 </div>
@@ -144,7 +148,7 @@
 </section>
 
 <article class="cuscuis slide-in-element">
-<img  src="imagens/cuscus_dark.png" alt="">
+<img  src="imagens/cuscuz.jpeg" alt="">
 </article>
 
 <section class="section4 slide-in-element">
@@ -442,26 +446,53 @@ João Florêncio, 401, Bairro Paraíba, Caicó - Rio Grande do Norte CEP: 59300-
                     if (isVisible) {
                         setTimeout(() => {
                             element.classList.add('visible');
-                        }, index * 150); 
+                        }, index * 75); 
                     } else {
                         
                     }
+                    
                 });
             };
-           
+            
             checkVisibility();
             
             window.addEventListener('scroll', checkVisibility);
            
-            document.querySelector('.slow-scroll-link').addEventListener('click', function(e) {
-                e.preventDefault();
-                document.documentElement.classList.add('slow-scroll');
-                setTimeout(() => {
-                    window.location.hash = this.getAttribute('href');
-                    setTimeout(() => {
-                        document.documentElement.classList.remove('slow-scroll');
-                    }, 1500);
-                }, 100);
+          
+            const contactForm = document.getElementById('contactForm');
+            const emailInput = document.getElementById('email');
+            const telefoneInput = document.getElementById('telefone');
+            const emailError = document.getElementById('email-error');
+            const telefoneError = document.getElementById('telefone-error');
+
+            contactForm.addEventListener('submit', function(event) {
+                let isValid = true;
+
+              
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(emailInput.value)) {
+                    emailError.textContent = 'Por favor, insira um e-mail válido.';
+                    emailError.style.display = 'block';
+                    isValid = false;
+                } else {
+                    emailError.textContent = '';
+                    emailError.style.display = 'none';
+                }
+
+                
+                const telefonePattern = /^\d{10,11}$/;
+                if (!telefonePattern.test(telefoneInput.value.replace(/\D/g, ''))) { 
+                    telefoneError.textContent = 'Por favor, insira um telefone válido (apenas números, 10 ou 11 dígitos).';
+                    telefoneError.style.display = 'block';
+                    isValid = false;
+                } else {
+                    telefoneError.textContent = '';
+                    telefoneError.style.display = 'none';
+                }
+
+                if (!isValid) {
+                    event.preventDefault(); 
+                }
             });
         });
     </script>

@@ -5,7 +5,12 @@ html {
 html.slow-scroll {
             scroll-behavior: smooth;
             scroll-snap-type: none;
-        }        
+        }
+.erro_mensagem {
+    color: red; 
+    font-size: 16px; 
+    display: none; 
+}                
 body {
 
     margin: 0;
@@ -31,12 +36,19 @@ body {
             transform: translateX(-100%); 
             transition: opacity 1s ease-out, transform 1s ease-out; 
         }
-
+.slide-in-element2{
+  opacity: 0; 
+            transform: translateX(100%); 
+            transition: opacity 1s ease-out, transform 1s ease-out; 
+}
 .slide-in-element.visible {
             opacity: 1; 
             transform: translateX(0); 
         }
-
+.slide-in-element.visible2 {
+            opacity: 1; 
+            transform: translateX(0); 
+        }
         
 
         
@@ -196,7 +208,6 @@ cursor: pointer;
     cursor: pointer;
 }
 
-/*parte2*/
 
 
 .container {
@@ -290,7 +301,7 @@ position: relative;
 }
 
 
-/*parte3*/
+
 
 .info{
     background-color: color-mix(in srgb, #163A50 100%, #000000 20%);
@@ -384,7 +395,7 @@ position: relative;
 .contact-form input {
     width: 100%;
     padding: 8px;
-    margin-bottom: 10%;
+    margin-bottom: 3%;
     border: 3px solid;
     border-color: color-mix(in srgb, #EFE7D8 100%, #000000 20%);
     border-radius: 4px;
