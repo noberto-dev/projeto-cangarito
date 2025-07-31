@@ -17,6 +17,9 @@ body{
     --cinza-background:#d9d9d9;
     --cinza-claro:#828282;
     --cinza-escuro:#3B3B3B;
+    --cinza-d9:#d9d9d9;
+    --palha-claro:#F3E3C4;
+    --verde-banana:#46CE3B;
 }
 
 #logo{
@@ -36,31 +39,38 @@ nav ul{
 }
 nav li{
     list-style: none;
-    
 }
 nav li a{
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: var(--terra);
     font-weight: 600;
+    transition: 0.2s ease-out;
+}
+nav li a:hover, .icons i:hover{
+    color: var(--palha-claro);
+    transition: 0.2s ease-out;
 }
 
 .icons{
     display: flex;
     gap: 20px;
-}
-i{
     font-size:28px;
     cursor: pointer;
     color: var(--5ml);
-
+}
+.icons i{
+    font-size:28px;
+    cursor: pointer;
+    color: var(--5ml);
+    transition: 0.2s ease-out;
 }
 
 #small-background{
     width: 100%;
     display: block;
     position: relative;
-    height: 300px;
+    height: 250px;
 }
 
 main{
@@ -75,9 +85,186 @@ main{
     padding: 2%;
 }
 
+#header-cardapio{
+    display: flex;
+    color: var(--5ml);
+    gap: 20px;
+}
+#endereco{
+    display: flex;
+    flex-wrap: nowrap;
+}
+#dias-semana-expand{
+    background-color: var(--cinza-background);
+    flex-direction: column;
+    max-height: 0;
+    border-radius: 0 0 16px 16px;
+    border-top: 1px #1A1A1A;
+    overflow: hidden;
+    user-select: none;
+    transition: max-height 0.4s ease-in;
+    display: flex;
+}
+#dias-semana-expand.open{
+    max-height: 300px;
+}
+#dias-semana-minimized{
+    display: flex;
+    flex-shrink: 1;
+    width: 46vh;
+    justify-content: space-between;
+    gap: 120px;
+    border-radius: 16px;
+    background-color: var(--cinza-background);
+    cursor: pointer;
+    padding: 2%;
+
+}
+
+#horarios{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#bola-situacao{
+    animation: bolinha-piscante 1s linear infinite;
+    background-color: var(--verde-banana);
+    border-radius: 100px;
+    width: 10px;
+    height: 10px;
+}
+#container-bola-aberto{
+    display: flex;
+    align-items: center;
+    color: var(--verde-banana);
+    gap: 4px;
+}
+@keyframes bolinha-piscante{
+    0%,100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+.dias-semana p:first-of-type{
+    font-weight: 600;
+}
+.dias-semana{
+    margin-left: 4%;
+}
+.info-restaurante{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .info-restaurante h1{
     text-align: center;
-    font-size: 40px;
+    font-size: 32px;
     color: var(--5ml);
     font-weight: 600;
+    margin-bottom: 8%;  
+}
+
+#barra-pesquisa{
+    display: flex;
+    border-radius: 50px;
+    padding: 14px;
+    background-color: var(--cinza-background);
+    width: 94%;
+    font-size: 18px;
+    gap: 1%;
+    margin: 6% 0 6%;
+}
+#barra-pesquisa input{
+    width: 94%;
+    border: 0;
+}
+section h2{
+    font-weight: 400;
+    font-size:22px;
+}
+section{
+    display: flex;
+    margin: 4%;
+}
+
+.lista-produtos{
+    display: flex;
+    flex-direction: column;
+}
+.grade-produtos{
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.grade-produtos article{
+    border: 1px solid var(--cinza-claro);
+    width: 40vh;
+    border-radius: 12px;
+    flex-grow: 1;
+    padding: 2%;
+    margin: 2% 0 2% 0;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.2s ease-in;   
+}
+
+.grade-produtos article:hover{
+    cursor: pointer;
+    box-shadow: 0 0 40px 5px rgb(214, 214, 214) ;
+    transition: 0.2s ease-in;
+}
+.grade-produtos article img{
+    width: 20vh;
+    border-radius: 6px;
+    height: 20vh;
+}
+.info-produto{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-bottom: 2%;
+}
+.container-info-produto{
+    display: flex;
+}
+.container-info-produto h3{
+    text-align: center;
+    font-size: 3vh;
+}
+.container-info-produto h2{
+    text-align: end;
+    font-weight: 400;
+}
+.tags-produto{
+    border-radius: 50px;
+    background-color: var(--cinza-d9);
+    width: auto;
+    font-size: 2vh;
+    padding: 2%;
+    width: fit-content;
+    font-weight: 500;
+}
+.container-tags-produto{
+    display: flex;
+    gap: 10%;
+    padding: 0 4% 0 4%;
+}
+footer{
+    margin-top: 10%;
+    background-color: var(--branco);
+    font-weight: 400;
+    text-align: center;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20%;
+    font-size: 1.5vh;
 }
