@@ -102,7 +102,7 @@ main{
     border-top: 1px #1A1A1A;
     overflow: hidden;
     user-select: none;
-    transition: max-height 0.4s ease-in;
+    transition: max-height 0.3s linear;
     display: flex;
 }
 #dias-semana-expand.open{
