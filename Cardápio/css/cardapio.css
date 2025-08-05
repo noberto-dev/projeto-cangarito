@@ -250,11 +250,20 @@ section{
     padding: 2%;
     width: fit-content;
     font-weight: 500;
+    height: auto;
 }
 .container-tags-produto{
     display: flex;
     gap: 10%;
     padding: 0 4% 0 4%;
+}
+#fechar-dialog:hover{
+    color:var(--sol);
+    cursor: pointer;
+}
+.sair-dialog{
+    width: 40px;
+    height: auto;
 }
 footer{
     margin-top: 10%;
