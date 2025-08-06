@@ -8,6 +8,7 @@
 
 body{
     background-color: var(--cinza-background);
+    font-size: 1rem;
 }
 :root{
     --sol:#D89F46;
@@ -161,7 +162,7 @@ main{
 }
 .info-restaurante h1{
     text-align: center;
-    font-size: 32px;
+    font-size: 2.5rem;
     color: var(--5ml);
     font-weight: 600;
     margin-bottom: 8%;  
@@ -183,7 +184,7 @@ main{
 }
 section h2{
     font-weight: 400;
-    font-size:22px;
+    font-size:2rem;
 }
 section{
     display: flex;
@@ -211,7 +212,8 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: 0.2s ease-in;   
+    transition: 0.2s ease-in;
+    overflow-wrap: anywhere;
 }
 
 .grade-produtos article:hover{
@@ -220,9 +222,9 @@ section{
     transition: 0.2s ease-in;
 }
 .grade-produtos article img{
-    width: 20vh;
+    width: 12vw;
     border-radius: 6px;
-    height: 20vh;
+    height: 14vh;
 }
 .info-produto{
     display: flex;
@@ -236,7 +238,7 @@ section{
 }
 .container-info-produto h3{
     text-align: center;
-    font-size: 3vh;
+    font-size: 1.75rem;
 }
 .container-info-produto h2{
     text-align: end;
@@ -262,9 +264,21 @@ section{
     cursor: pointer;
 }
 .sair-dialog{
-    width: 40px;
+    width: 50px;
     height: auto;
 }
+dialog #header-dialog{
+    border-radius: 18px;
+    border: none;
+}
+dialog{
+    border: none;
+    border-radius: 18px;
+}
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+  }
 footer{
     margin-top: 10%;
     background-color: var(--branco);
@@ -276,4 +290,9 @@ footer{
     justify-content: center;
     gap: 20%;
     font-size: 1.5vh;
+}
+#sair-dialog{
+    width: 20px;
+    height: auto;
+    border: 1px solid black;
 }

@@ -10,7 +10,9 @@ produtos.forEach(produto => {
 
         dialog.innerHTML = `
                 <div id="header-dialog">
-                <i class="bi bi-chevron-compact-down"></i>
+                <span class="sair-dialog">
+                  <i id="fechar-dialog" class="bi bi-chevron-compact-down"></i>
+                </span>
                 <h1>${nome}</h1>
               </div>
               <div class="info-dialog">
