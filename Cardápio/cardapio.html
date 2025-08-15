@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/cardapio.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src=".//script/main.js" type="module" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body data-theme="dark">
 
     <header><nav>
     <a href=""><img id="logo" src="../Imagens/logo-cangarito.png" alt=""></a>
@@ -20,7 +22,7 @@
         <li><a href="">Unidades</a></li>
         <li><a href="">Sobre</a></li>
     </ul>
-
+    
     <div class="icons">
         
         <a href=""><i class="bi bi-cart-fill"></i></a>
@@ -95,33 +97,6 @@
         
         <section class="lista-produtos">
             <h2>Campeões de Venda</h2>
-            <dialog>
-              <div id="header-dialog">
-                <button class="sair-dialog">
-                  <i id="fechar-dialog" class="bi bi-chevron-compact-down"></i>
-                </button>
-                <h1>Coxinha Barata</h1>
-              </div>
-              <div class="info-dialog">
-                <div class="container-tags-produto">
-                  <div class="tags-produto">
-                  <p>300g</p>
-                </div>
-                <img src="https://media.gazetadopovo.com.br/2021/08/26203036/coxinha-postos-pelanda-1920x1080-720x720.jpg" alt="">
-                <p class="desc-produto">
-                  Coxinha de frango com molho especial do cangaço, temperado com cominho e coentro defumados.
-                </p>
-              </div>
-              <label for="observacao-dialog">Alguma Observação?</label>
-              <textarea name="observacao-dialog" id="observacao-dialog"></textarea>
-
-              <div class="footer-dialog">
-                <div class="botao-adicionar"></div>
-                <button class="adicionar-dialog">Adicionar + </button>
-              </div>
-
-
-            </dialog>
             <div class="grade-produtos">
 
                 <article>
@@ -133,7 +108,10 @@
                         <div class="container-tags-produto">
                           <div class="tags-produto">
                           <p>300g</p>
-                        </div>
+                          </div>
+                          <div class="tags-produto">
+                            <p>Catupiry</p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -185,7 +163,7 @@
                       <img src="https://paraisodacozinha.com.br/wp-content/uploads/misto-quente-tradicional-a.jpg" alt="Misto Nordestino">
                       <div class="info-produto">
                         <h3>Misto Nordestino</h3>
-                        <h2>R$ 22,00</h2>
+                        <h2>R$ 7,00</h2>
                         <div class="container-tags-produto">
                           <div class="tags-produto">
                           <p>450g</p>
@@ -194,7 +172,7 @@
                       </div>
                     </div>
                       <p class="desc-produto">
-                        Prato misto com cuscuz, macaxeira frita, calabresa acebolada e ovo de capoeira.
+                        Um sanduiche básico com presunto, queijo, frango, ovo e um molho da casa.
                       </p>
                   </article>
         </section>
@@ -521,7 +499,33 @@
             </div>
         </section>
     </main>
+    
+    <dialog>
+      <div id="header-dialog">
+        <button class="sair-dialog">
+          <i id="fechar-dialog" class="bi bi-chevron-compact-down"></i>
+        </button>
+        <h1>Coxinha Barata</h1>
+      </div>
+      <div class="info-dialog">
+        <div class="container-tags-produto">
+          <div class="tags-produto">
+          <p>300g</p>
+        </div>
+        <img src="https://media.gazetadopovo.com.br/2021/08/26203036/coxinha-postos-pelanda-1920x1080-720x720.jpg" alt="">
+        <p class="desc-produto">
+          Coxinha de frango com molho especial do cangaço, temperado com cominho e coentro defumados.
+        </p>
+      </div>
+      <label for="observacao-dialog">Alguma Observação?</label>
+      <textarea name="observacao-dialog" id="observacao-dialog"></textarea>
 
+      <div class="footer-dialog">
+        <div class="botao-adicionar"></div>
+        <button class="adicionar-dialog">Adicionar + </button>
+      </div>
+    </dialog>
+    
     <footer>
         <h3>Copyright © 2025 Restaurante Cangarito
           | Desevolvido por Informática 2V |</h3>
