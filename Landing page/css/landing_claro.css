@@ -97,6 +97,10 @@ li{
     font-size: 64px;
     color:#9d4821
 }
+.icone2{
+  display: flex;
+  text-decoration: none;
+}
 #carrinho{
     font-size: 40px;
     color: #000000;
