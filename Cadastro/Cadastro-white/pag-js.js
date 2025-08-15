@@ -1,3 +1,5 @@
+
+
 function validar(){
     try{
         var usuario = document.getElementById("usuario").value;
@@ -40,7 +42,11 @@ function validar(){
         }
 
         alert("Login validado com sucesso!");
+        function redirecionar() {
+            window.location.href = "../../Cardápio/cardapio.html";
+        }
     } catch(err){
         alert("Erro: " + err);
     }
 }
+
