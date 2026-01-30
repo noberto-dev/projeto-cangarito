@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/0dcb96df0e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="stylecarrinho.css" />
+  <title>Carrinho</title>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="imagens/logo.png" alt="Cangarito Logo">
+    <nav>
+      <ul id="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Cardápio</a></li>
+        <li><a href="">Contato</a></li>
+        <li><a href="">Unidades</a></li>
+        <li><a href="">Sobre</a></li>
+      </ul>
+    </nav>
+
+    <div id="userclaro">
+      <a href="#" aria-label="Carrinho"><i id="carrinho" class="fa-solid fa-cart-shopping"></i></a>
+      <a href="" aria-label="Perfil"><i id="icone" class="fa-regular fa-circle-user fa-2xl"></i></a>
+    </div>
+  </header>
+
+  <h1>Carrinho</h1>
+
+  
+  <form class="formulariojs" action="#">
+    <h2 class="romeritotitles">Adicionar comida</h2>
+
+    <div class="romeritoforms">
+      <div class="campo">
+        <label for="nome">Nome do Prato</label>
+        <input type="text" id="nome" placeholder="Ex: Carne de sol">
+      </div>
+
+      <div class="campo">
+        <label for="categoria">Categoria do Prato</label>
+        <input type="text" id="categoria" placeholder="Ex: Pra matar a fome">
+      </div>
+    </div>
+
+    <div class="romeritoforms">
+      <div class="campo">
+        <label for="quantidade">Quantidade</label>
+        <input type="number" id="quantidade" min="1" value="1">
+      </div>
+
+      <div class="campo">
+        <label for="valor">Valor da comida</label>
+        <input type="number" id="valor" step="0.01" placeholder="Ex: 25.00">
+      </div>
+    </div>
+
+    
+
+    <button type="button" class="romeritoadicoes">Adicionar</button>
+  </form>
+
+  <section class="container" aria-label="Itens no carrinho">
+   <div class="carrinho_div" aria-label="Itens no carrinho" role="list" tabindex="0">
+    
+      <article class="item" role="listitem" aria-label="Item Carne de sol, categoria Pra matar a fome, quantidade 1, valor 80 reais">
+        <div class="image-container">
+          <img src="imagens/carne+de+sol.jpg" 
+            alt="Carne de sol com acompanhamentos" 
+           >
+        </div>
+        
+        <div class="info">
+          <span class="nome_food">Nome do prato: Carne de sol</span> <br>
+          <span class="info_comida">Categoria: Pra matar a fome</span> <br>
+          <span class="info_comida">Quantidade:</span> <br>
+          <span class="preço">Valor: </span> <br>
+        </div>
+        <button class="remover_bt" aria-label="Remover item Verdadeiro Paulista" title="Remover item"><span class="remover">×</span></button>
+        <span class="opcoes" aria-hidden="true">⋮</span>
+        </article>
+
+     
+      <article class="item" role="listitem" aria-label="Item Carne de sol, categoria Pra matar a fome, quantidade 1, valor 80 reais">
+        <div class="image-container">
+          <img src="imagens/carne+de+sol.jpg" 
+            alt="Carne de sol com acompanhamentos" 
+            >
+        </div>
+        
+        <div class="info">
+          <span class="nome_food">Nome do prato: Carne de sol</span> <br>
+          <span class="info_comida">Categoria: Pra matar a fome</span> <br>
+          <span class="info_comida">Quantidade:</span> <br>
+          <span class="preço">Valor: </span> <br>
+        </div>
+        <button class="remover_bt" aria-label="Remover item Verdadeiro Paulista" title="Remover item"><span class="remover">×</span></button>
+        <span class="opcoes" aria-hidden="true">⋮</span>
+        </article>
+
+     
+      <article class="item" role="listitem" aria-label="Item Carne de sol, categoria Pra matar a fome, quantidade 1, valor 80 reais">
+        <div class="image-container">
+          <img src="imagens/carne+de+sol.jpg" 
+            alt="Carne de sol com acompanhamentos" 
+            >
+        </div>
+        
+        <div class="info">
+          <span class="nome_food">Nome do prato: Carne de sol</span> <br>
+          <span class="info_comida">Categoria: Pra matar a fome</span> <br>
+          <span class="info_comida">Quantidade:</span> <br>
+          <span class="preço">Valor: </span> <br>
+        </div>
+        <button class="remover_bt" aria-label="Remover item Verdadeiro Paulista" title="Remover item"><span class="remover">×</span></button>
+        <span class="opcoes" aria-hidden="true">⋮</span>
+        </article>
+    </div>
+    
+  </section>
+
+  <footer>
+    Copyright © 2025 Restaurante Cangarito | Desenvolvido por
+    <a href="mailto:ajuda-cangarito@gmail.com">Informática 2V</a>
+    <br><br>
+    <span id="local">
+      João Florêncio, 401, Bairro Paraíba, Caicó - Rio Grande do Norte CEP: 59300-000 <br>
+      Fale conosco: <a href="mailto:ajuda-cangarito@gmail.com">ajuda-cangarito@gmail.com</a>
+    </span>
+  </footer>
+</body>
+</html>

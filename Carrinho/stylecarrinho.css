@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --box-width: 900px;
+  --box-height: 420px; 
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #ece2ce;
+}
+
+
+header{
+  background-color: #d89c4a;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header img:hover{
+  cursor: pointer;
+}
+#menu{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+#menu li{
+  display: flex;
+  align-items: center;
+}
+
+#menu a{
+  text-decoration: none;
+  color: #803919;
+  font-weight: 600;
+  font-size: 32px;
+  transition: color 0.3s ease;
+}
+
+#menu a:hover{
+  color: #F3E3C4;
+}
+
+.logo{
+  height: 80px;
+  
+}
+
+#userclaro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#carrinho{
+  font-size: 40px;
+  color: #000000;
+  border-bottom: solid #803919 3px;
+  width: fit-content;
+  margin-right: 40px;
+}
+
+#icone{
+  font-size: 64px;
+  color:#9d4821;
+}
+
+
+h1{
+  font-weight: 600;
+  font-size: 40px;
+  margin: 24px 24px 12px;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.formulariojs{
+  width: 900px;
+  height: auto;
+  max-height: none;
+  overflow: visible;
+  margin: 0 auto 16px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #5a5a58;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.formulariojs .romeritotitles{
+  margin: 0;
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.romeritoforms{
+  display: flex;
+  gap: 20px;
+}
+
+.campo{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.formulariojs label{
+  color: #f5f5f5;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.formulariojs input{
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+}
+
+.formulariojs input:focus{
+  outline: 2px solid #deb877;
+}
+
+.romeritoadicoes{
+  margin-top: auto;
+  align-self: flex-start; 
+  padding: 10px 26px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #deb877;
+  color: #9c4018;
+  transition: filter 1s ease;
+}
+
+.romeritoadicoes:hover{
+  transition: 1s ease;
+  background-color: #f1cd8f;
+}
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  padding: 0 24px 24px;
+}
+
+.carrinho_div{
+  width: 900px;
+  height: 400px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: inset 0 0 7px #888;
+  overflow-y: auto;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  scrollbar-width: thin;
+  scrollbar-color: #deb877 #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.carrinho_div::-webkit-scrollbar{
+  width: 12px;
+}
+
+.carrinho_div::-webkit-scrollbar-track{
+  background: #eee;
+  border-radius: 10px;
+}
+
+.carrinho_div::-webkit-scrollbar-thumb{
+  background-color: #deb877;
+}
+
+.item{
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px #aaa7;
+  padding: 10px 12px;
+  display: flex;
+  gap: 14px;
+  margin-bottom: 12px;
+  position: relative;
+  height: 100px;
+  align-items: flex-start;
+  font-family: "Montserrat", sans-serif;
+  color: #3B3B3B;
+  display: flex;
+  
+  
+}
+
+.item:hover{
+  box-shadow: 2px 2px 9px #aa997744;
+}
+
+.image-container{
+  flex: 0 0 105px;
+  height: 85px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.nome_food{
+  font-size: 24px;
+}
+
+.info_comida{
+  font-size: 14px;
+  color: #3B3B3B;
+}
+
+.preço{
+  font-size: 18px;
+  color: #3B3B3B;
+}
+
+.remover_bt{
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.remover{
+  font-size: 26px;
+  line-height: 1;
+  color: #c93a3a;
+  font-weight: 800;
+}
+
+.remover_bt:hover{
+  background-color: #c93a3a;
+}
+
+.remover_bt:hover .remover{
+  color: white;
+}
+
+.opcoes{
+  display: none;
+  top: 8px;
+  right: 42px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #999;
+  user-select: none;
+}
+
+
+footer{
+  margin-top: 24px;
+  font-size: 20px;
+  text-align: center;
+  padding: 16px 24px;
+  color: #444;
+  background: #f5f5f5;
+  box-shadow: inset 0 1px 1px #ddd;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer a{
+  color: #D89F46;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+#local{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+@media (max-width: 420px){
+  :root{
+    --box-width: 100%;
+    --box-height: 380px;
+  }
+
+  header{
+    padding: 6px;
+    gap: 8px;
+  }
+
+  .logo{
+    height: 34px;
+  }
+
+  #menu{
+    gap: 8px;
+  }
+
+  #menu a{
+    font-size: 14px;
+  }
+
+  #carrinho{
+    border-color: transparent;
+    font-size: 22px;
+    margin-right: 10px;
+  }
+
+  #icone{
+    font-size: 34px;
+  }
+
+  .formulariojs{
+    margin: 0 12px 16px;
+    padding: 16px;
+    min-height: auto;
+  }
+
+  .romeritoforms{
+    flex-direction: column;
+  }
+
+  .container{
+    padding: 0 12px 24px;
+  }
+
+  .carrinho_div{
+    height: var(--box-height);
+  }
+
+  footer{
+    font-size: 16px;
+  }
+
+  #local{
+    font-size: 12px;
+  }
+}
