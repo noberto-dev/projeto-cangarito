@@ -7,6 +7,8 @@ let categoria = document.getElementById("categoria");
 let quantidade = document.getElementById("quantidade");
 let valor = document.getElementById("valor");
 
+let lista_pedido = []
+
 botaoAdicionar.addEventListener("click", () => {
     const nomePodado = nome.value.trim();
     const categoriaPodado = categoria.value.trim();
@@ -24,6 +26,22 @@ botaoAdicionar.addEventListener("click", () => {
         valor: valorPodado
     };
 
+    const pedido = {
+        nome: nomePodado,
+        categoria: categoriaPodado,
+        totalGeral: quantidadePodado * valorPodado,
+        quantidadeItens: quantidadePodado,
+    }
+
+    lista_pedido.push(pedido);
+
     carrinho.push(item);
      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+
+    if(i = 0, i< lista_pedido.legth, i++)
+    {
+        console.while(`<p></p>`);
+    }
+
 })
