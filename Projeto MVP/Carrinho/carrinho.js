@@ -1,4 +1,8 @@
 let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+// pega do localStorage a string JSON salva na chave "carrinho"
+// JSON.parse converte essa string JSON para um array de objetos
+// se não existir nada salvo, getItem retorna null, parse vira null e o || usa []
+
 
 const botaoAdicionar = document.querySelector(".romeritoadicoes");
 const listaContainer = document.querySelector(".carrinho_div");
@@ -49,7 +53,10 @@ function atualizarLista() {
 
         article.querySelector(".remover_bt").addEventListener("click", () => {
             carrinho = carrinho.filter(i => i.id !== item.id);
+            //mantém no carrinho os ids q forem diferente do id do item excluido
+            //e aquele q for igual ele filtra
             localStorage.setItem("carrinho", JSON.stringify(carrinho));
+            // dps salva no localStorage na chave "carrinho" e transforma tudo para string
             atualizarLista();
         });
 
@@ -114,8 +121,10 @@ botaoAdicionar.addEventListener("click", () => {
 
     lista_pedido.push(pedido);
     carrinho.push(item);
+    //adiciona o novo item no carrinho
 
     localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    //já salva o novo item como string
 
     atualizarLista();
 });
