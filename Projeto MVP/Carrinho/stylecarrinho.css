@@ -80,6 +80,34 @@ header img:hover{
   color:#9d4821;
 }
 
+.formulariojs {
+  position: relative;
+}
+
+.romeritoadicoes {
+  margin-top: 24px;
+}
+
+.linha-acoes {
+  display: flex;
+  flex-direction: column;   /* empilha verticalmente */
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.linha-divisoria {
+  height: 1px;
+  background: rgba(255,255,255,0.25);
+}
+
+#metricas {
+  display: flex;
+  gap: 4px;
+  font-size: 0.9rem;
+  color: #f2f2f2;
+  opacity: 0.85;
+}
+
 
 h1{
   font-weight: 600;
@@ -140,12 +168,13 @@ h1{
 }
 
 .romeritoadicoes{
-  margin-top: auto;
+  margin-top: -30px;
   align-self: flex-start; 
   padding: 10px 26px;
   font-size: 16px;
   font-weight: 700;
   border-radius: 20px;
+  letter-spacing: 0.3px;
   border: none;
   cursor: pointer;
   background-color: #deb877;
